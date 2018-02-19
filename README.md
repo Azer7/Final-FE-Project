@@ -1,6 +1,5 @@
-Final Front-End Project.
-Web: http://corpthemes.com/html/ibox/index.html	
-     8 pages.
+## Final Front-End Project.
+Web 8 pages: http://corpthemes.com/html/ibox/index.html
 
 1.	http://corpthemes.com/html/ibox/index.html
 2.	http://corpthemes.com/html/ibox/about.html
