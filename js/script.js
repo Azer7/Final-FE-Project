@@ -20,6 +20,29 @@ $(document).ready(function () {
 });
 
 
+
+var portfolioIsotope = function () {
+    if ($().isotope) {
+        var $container = $('.portfolio-content');
+        $container.imagesLoaded(function () {
+            $container.isotope({
+                itemSelector: '.portfolio-item',
+                transitionDuration: '1s'
+            });
+        });
+
+        $('.portfolio-filter li').on('click', function () {
+            var selector = $(this).find("a").attr('data-filter');
+            $('.portfolio-filter li').removeClass('active');
+            $(this).addClass('active');
+            $container.isotope({
+                filter: selector
+            });
+            return false;
+        });
+    };
+}
+
     // $('.dropdown').hover(function () {
     //    $(this).addClass("show");
     //    $(this).find(".dropdown-menu").addClass("show");

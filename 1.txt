@@ -1,0 +1,121 @@
+   <section class="flat-row row-portfolio v1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="flat-portfolio style2 v1 clearfix">
+                            <div class="title-section">
+                                <h2 class="title letter_spacing_03 fontweight_600">Our Portfolio</h2>
+                            </div><!-- /.title-section -->
+                            <ul class="portfolio-filter">
+                                <li data-filter=".all" class="active"><a href="#">All</a></li>
+                                <li><a data-filter=".website" href="#">Website <span>10</span></a></li>
+                                <li><a data-filter=".advertising" href="#">Advertising <span>19</span></a></li>
+                                <li><a data-filter=".branding" href="#">Branding <span>12</span></a></li>
+                                <li><a data-filter=".brand" href="#">Brand <span>10</span></a></li>
+                            </ul><!-- /.port-filter -->
+                        </div><!-- /.flat-portfolio -->
+                    </div><!-- /.col-md-12 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+            <div class="divider h40"></div>
+            <div class="flat-portfolio style2 v1">
+                <div class="portfolio-content">
+                    <div class="portfolio-item all branding brand website clearfix">
+                        <div class="item-box">
+                            <div class="thumb">
+                                <img src="images/portfolio/portfolio-homev1-01.jpg" alt="image">
+                                <div class="overlay-effect portfolio-effect bg_gradient"></div>
+                            </div>
+                            <div class="content">
+                                <h2 class="title">
+                                    <a href="portfolio-single.html">The standard chunk of Lorem Ipsum</a>
+                                </h2>
+                                <ul class="meta-data">
+                                     <li><a href="#">Advertising</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item all advertising brand clearfix">
+                        <div class="item-box">
+                            <div class="thumb">
+                                 <img src="images/portfolio/portfolio-homev1-02.jpg" alt="image">
+                                <div class="overlay-effect portfolio-effect bg_gradient"></div>
+                            </div>
+                            <div class="content">
+                                <h2 class="title">
+                                    <a href="portfolio-single.html">The standard chunk of Lorem Ipsum</a>
+                                </h2>
+                                <ul class="meta-data">
+                                      <li><a href="#">Website</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item all advertising branding   clearfix">
+                        <div class="item-box">
+                            <div class="thumb">
+                                <img src="images/portfolio/portfolio-homev1-03.jpg" alt="image">
+                                <div class="overlay-effect portfolio-effect bg_gradient"></div>
+                            </div>
+                            <div class="content">
+                                <h2 class="title">
+                                    <a href="portfolio-single.html">The standard chunk of Lorem Ipsum</a>
+                                </h2>
+                                <ul class="meta-data">
+                                    <li><a href="#">Branding</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item all advertising brand website clearfix">
+                        <div class="item-box">
+                            <div class="thumb">
+                                <img src="images/portfolio/portfolio-homev1-04.jpg" alt="image">
+                                <div class="overlay-effect portfolio-effect bg_gradient"></div>
+                            </div>
+                            <div class="content">
+                                <h2 class="title">
+                                    <a href="portfolio-single.html">The standard chunk of Lorem Ipsum</a>
+                                </h2>
+                                <ul class="meta-data">
+                                    <li><a href="#">Brand</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item all advertising branding  website clearfix">
+                        <div class="item-box">
+                            <div class="thumb">
+                                <img src="images/portfolio/portfolio-homev1-05.jpg" alt="image">
+                                <div class="overlay-effect portfolio-effect bg_gradient"></div>
+                            </div>
+                            <div class="content">
+                                <h2 class="title">
+                                    <a href="portfolio-single.html">The standard chunk of Lorem Ipsum</a>
+                                </h2>
+                                <ul class="meta-data">
+                                    <li><a href="#">Website</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.portfolio-item -->
+                    <div class="portfolio-item all branding brand clearfix">
+                        <div class="item-box">
+                            <div class="thumb">
+                                <img src="images/portfolio/portfolio-homev1-06.jpg" alt="image">
+                                <div class="overlay-effect portfolio-effect bg_gradient"></div>
+                            </div>
+                            <div class="content">
+                                <h2 class="title">
+                                    <a href="portfolio-single.html">The standard chunk of Lorem Ipsum</a>
+                                </h2>
+                                <ul class="meta-data">
+                                    <li><a href="#">Branding</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- /.portfolio-item -->
+                </div><!-- /.portfolio-content -->
+            </div><!-- /.flat-portfolio -->
+    </section>
