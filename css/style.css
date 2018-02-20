@@ -304,9 +304,11 @@ body {
   background-color: #151515;
   padding: 80px 0px 80px 0px;
   /* Widget social */ }
-  #footer .foot1 img {
-    margin-bottom: 21px;
-    width: 50%; }
+  #footer .foot1 {
+    margin-left: -15px; }
+    #footer .foot1 img {
+      margin-bottom: 21px;
+      width: 50%; }
   #footer p {
     color: #737373;
     line-height: 17px;
@@ -408,6 +410,17 @@ body {
   -o-background-size: cover;
   background-size: cover;
   padding: 109px 0px 115px 0px; }
+  .parallax .para-button {
+    border: 1px;
+    text-transform: none;
+    padding: 8px 24px;
+    margin: 11px 0px 0px 41px;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #2bd383;
+    border-radius: 5px; }
   .parallax .quote-title {
     font-size: 36px;
     line-height: normal;
@@ -415,11 +428,9 @@ body {
     color: #fff;
     letter-spacing: 0.2px; }
 
-.choose-us
-.choose-bottom {
+.choose-us .choose-bottom {
   width: 33%; }
-
-.number-list {
+.choose-us .number-list {
   width: 21px;
   height: 21px;
   border-radius: 50%;
@@ -438,16 +449,63 @@ body {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-
-.choose-title p {
+.choose-us .choose-title p {
   text-align: center; }
-
-h2 {
+.choose-us h2 {
   font-size: 36px;
   line-height: 48px;
   color: #1a1e1a;
   font-weight: 500;
   text-align: center;
   margin-bottom: 25px; }
+
+.about img {
+  max-width: 100%;
+  height: auto; }
+.about p {
+  line-height: 24px;
+  margin-bottom: 24px; }
+.about .about-h6 {
+  line-height: normal;
+  letter-spacing: 9.8px;
+  color: #1a1e1a;
+  margin: 0px 0px 22px 2px; }
+
+.parallax-megin {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0%;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url("../img/parallax/parallax-testimonials.jpg");
+  padding: 100px 0px 100px 0px; }
+  .parallax-megin .message-megin blockquote {
+    color: #d8d8d8;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: 0.05px;
+    background: #25211c;
+    width: 52%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 16px 0px 16px 29px;
+    margin-bottom: 23px; }
+    .parallax-megin .message-megin blockquote::after {
+      content: "";
+      position: absolute;
+      top: 49%;
+      left: 49%;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #25211c; }
+  .parallax-megin .owl-carousel2 {
+    cursor: w-resize;
+    background: transparent;
+    position: relative; }
+    .parallax-megin .owl-carousel2 img {
+      width: auto !important;
+      margin: auto; }
 
 /*# sourceMappingURL=style.css.map */

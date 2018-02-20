@@ -5,16 +5,25 @@
 //     });
 
 
-
-
 $(document).ready(function () {
-    var owl = $('.owl-carousel');
+    var owl = $('#owl-carousel1');
     owl.owlCarousel({
         items:5,
         loop:true,
         autoplay:true,
         autoplayTimeout:3000,
         autoplayHoverPause:true
+        
+    });
+
+    var owl2 = $('#owl-carousel2');
+    owl2.owlCarousel({
+        items:1,
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true
+        
     });
 
 });
