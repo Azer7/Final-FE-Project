@@ -273,17 +273,14 @@ body {
 
 .bottom {
   background: #0a0a0a;
-  padding: 14px 0px 13px 0px; }
+  padding: 21px 0px 22px 0px; }
   .bottom .copyright p {
-    font-size: 13.5px;
-    margin-left: 35px; }
+    font-size: 13.5px; }
   .bottom .copyright p a {
     color: #2bd383;
     text-decoration: none; }
-  .bottom .copyright p,
-  .bottom .copyright p a:hover {
-    color: #868686;
-    display: inline; }
+    .bottom .copyright p a:hover {
+      color: #868686; }
   .bottom .navbottom .menu li {
     display: inline; }
     .bottom .navbottom .menu li a {
@@ -292,7 +289,7 @@ body {
       font-weight: 400;
       text-decoration: none;
       text-transform: uppercase;
-      font-size: 11px;
+      font-size: 13px;
       line-height: 24px;
       text-align: left;
       margin: 0px 4px 0px 18px; }
@@ -386,13 +383,16 @@ body {
     position: relative; }
     #footer .inputplain i {
       position: absolute;
-      top: 12px;
-      right: 11px;
+      top: 15px;
+      right: 15px;
       color: white;
       font-size: 12px; }
       #footer .inputplain i:hover {
         color: #2bd383;
         cursor: pointer; }
+
+#blog {
+  margin-bottom: 130px; }
 
 .owl-carousel {
   background-color: #2bd383; }
@@ -507,5 +507,50 @@ body {
     .parallax-megin .owl-carousel2 img {
       width: auto !important;
       margin: auto; }
+
+.services .service-logo {
+  text-align: center; }
+  .services .service-logo h1 {
+    color: black; }
+.services .service-input {
+  padding: 40px;
+  float: none;
+  margin: 0px;
+  text-align: center;
+  color: #1a1e1a;
+  font-weight: 500;
+  margin: 36px 0px 33px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  border: 1px solid #f2f2f2;
+  margin-bottom: 28px; }
+  .services .service-input h2 {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 500;
+    letter-spacing: 2.3px !important; }
+  .services .service-input i {
+    font-size: 45px;
+    line-height: 56px;
+    margin: auto; }
+.services .service-overlay {
+  padding: 1px 20px 20px 31px;
+  color: #ffffff;
+  width: 100%;
+  height: 76%;
+  background: -webkit-linear-gradient(120deg, #11998e, #38ef7d);
+  position: absolute;
+  top: 33px;
+  left: -7px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out; }
+  .services .service-overlay h2 {
+    margin-top: 30px; }
+  .services .service-overlay:hover {
+    opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */
