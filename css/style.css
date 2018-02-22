@@ -658,7 +658,7 @@ p {
   transition: all 0.7s; }
 
 #header.scrolled {
-  background-color: rgba(26, 30, 26, 0.7) !important;
+  background-color: rgba(26, 30, 26, 0.7);
   transition: all 0.7s;
   padding-top: 0;
   padding-bottom: 0;
@@ -1173,14 +1173,64 @@ p {
       letter-spacing: 0.25px; }
 
 .parallax-about-0 {
-  background-image: url("../img/parallax/parallax-quote-style2.jpg");
+  background-image: url(../img/parallax/parallax-page.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 47% 50%;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
+  background-position: 50% 0;
   background-size: cover;
-  padding: 109px 0px 115px 0px; }
+  position: relative;
+  padding: 126px 0px 134px 0px; }
+  .parallax-about-0 ul {
+    padding-top: 4px; }
+  .parallax-about-0 li {
+    position: relative;
+    display: inline-block;
+    margin-right: 22px;
+    color: #1a1e1a;
+    font-weight: 500; }
+    .parallax-about-0 li a {
+      color: #1a1e1a; }
+  .parallax-about-0 .home-arrow::after {
+    content: "\f061";
+    font-family: "FontAwesome";
+    color: #1a1e1a;
+    position: absolute;
+    top: 0;
+    left: 115%; }
+  .parallax-about-0 h1 {
+    color: black; }
+
+#header2 {
+  top: 45;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background: white;
+  transition: all 0.7s; }
+  #header2 .navbar {
+    padding: 25px 0px; }
+  #header2 a {
+    color: black; }
+  #header2.scrolled {
+    z-index: 2;
+    transition: all 0.7s;
+    top: 0; }
+
+#services {
+  margin: 95px auto; }
+
+.services2 {
+  transition: all 2s; }
+  .services2 .service-input {
+    display: flex;
+    padding: 0px;
+    text-align: left;
+    transition: all 1s; }
+    .services2 .service-input:hover i {
+      transform: rotateY(180deg); }
+    .services2 .service-input i {
+      transition: all 1s;
+      margin: 0px; }
 
 /*# sourceMappingURL=style.css.map */

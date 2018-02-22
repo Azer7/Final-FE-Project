@@ -1,11 +1,8 @@
-
-#ibox-third{
-    padding: 48px 0px 48px 0px;  
+#ibox-third {
+    padding: 48px 0px 48px 0px;
 }
 
-
 .parallax-about {
-
     background-image: url('../img/parallax/parallax-counters.jpg');
     width: 100%;
     background-repeat: no-repeat;
@@ -99,7 +96,7 @@
 }
 
 #welcome-ibox {
-    span{
+    span {
         background: -webkit-linear-gradient(top left, #11998e, #38ef7d);
         background: -moz-linear-gradient(top left, #11998e, #38ef7d);
         background: -o-linear-gradient(top left, #11998e, #38ef7d);
@@ -151,17 +148,59 @@
     }
 }
 
-
 .parallax-about-0 {
-
-    background-image: url('../img/parallax/parallax-quote-style2.jpg');
+    background-image: url(../img/parallax/parallax-page.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 47% 50%;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
+    background-position: 50% 0;
     background-size: cover;
-    padding: 109px 0px 115px 0px;
+    position: relative;
+    padding: 126px 0px 134px 0px;
+    ul {
+        padding-top: 4px;
+    }
+    li {
+        position: relative;
+        display: inline-block;
+        margin-right: 22px;
+        color: #1a1e1a;
+        font-weight: 500;
+        a{
+            color: #1a1e1a;
+        }
+    }
+    .home-arrow {
+        &::after {
+            content: "\f061";
+            font-family: "FontAwesome";
+            color: #1a1e1a;
+            position: absolute;
+            top: 0;
+            left: 115%
+        }
+    }
+    h1 {
+        color: black;
+    }
+}
 
+#header2 {
+    .navbar {
+        padding: 25px 0px;
+    }
+    top: 45;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: white;
+    transition: all 0.7s;
+    a {
+        color: black;
+    }
+    &.scrolled {
+        z-index: 2;
+        transition: all 0.7s;
+        top: 0;
+    }
 }

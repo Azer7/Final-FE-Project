@@ -793,7 +793,7 @@ p {
     
 }
 #header.scrolled{
-    background-color: rgba(26,30,26,0.7)!important;   
+    background-color: rgba(26,30,26,0.7);   
     transition: all 0.7s;
     padding-top: 0;
     padding-bottom: 0;
@@ -993,3 +993,4 @@ p {
 
 @import '1index';
 @import '2about';
+@import '3services';
