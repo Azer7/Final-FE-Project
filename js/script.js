@@ -115,4 +115,3 @@ function move() {
   move4()
 
   
-console.log(elem4) ;

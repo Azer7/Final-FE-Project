@@ -1,4 +1,11 @@
+
+#ibox-third{
+    padding: 48px 0px 48px 0px;  
+}
+
+
 .parallax-about {
+
     background-image: url('../img/parallax/parallax-counters.jpg');
     width: 100%;
     background-repeat: no-repeat;
@@ -7,7 +14,6 @@
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding: 48px 0px 48px 0px;
     .icon-ibox {
         background: #2bd383;
         width: 54px;
@@ -24,8 +30,7 @@
         &:hover i {
             color: #2bd383;
             position: relative;
-            z-index: 2;
-            // transform: scale(0.5);
+            z-index: 2; // transform: scale(0.5);
         }
         &:hover::after {
             opacity: 1;
@@ -59,37 +64,104 @@
             transition: all 0.3s ease-in-out;
         }
     }
-    .text-ibox{
-        h6{        line-height: 20px;
-        color: #d9d9d9;
-        font-weight: 500;
-        letter-spacing: 0.3px;
-
+    .text-ibox {
+        h6 {
+            line-height: 20px;
+            color: #d9d9d9;
+            font-weight: 500;
+            letter-spacing: 0.3px;
         }
-
     }
-
-    #myBar
-    {    font-size: 24px;
+    #myBar {
+        font-size: 24px;
         line-height: 31px;
         font-weight: 700;
-        color: #feffff;}
-        #myBar2
-        {    font-size: 24px;
-            line-height: 31px;
-            font-weight: 700;
-            color: #feffff;}
-            #myBar3
-            {    font-size: 24px;
-                line-height: 31px;
-                font-weight: 700;
-                color: #feffff;}
-                #myBar4
-                {    font-size: 24px;
-                    line-height: 31px;
-                    font-weight: 700;
-                    color: #feffff;}
+        color: #feffff;
+    }
+    #myBar2 {
+        font-size: 24px;
+        line-height: 31px;
+        font-weight: 700;
+        color: #feffff;
+    }
+    #myBar3 {
+        font-size: 24px;
+        line-height: 31px;
+        font-weight: 700;
+        color: #feffff;
+    }
+    #myBar4 {
+        font-size: 24px;
+        line-height: 31px;
+        font-weight: 700;
+        color: #feffff;
+    }
+}
+
+#welcome-ibox {
+    span{
+        background: -webkit-linear-gradient(top left, #11998e, #38ef7d);
+        background: -moz-linear-gradient(top left, #11998e, #38ef7d);
+        background: -o-linear-gradient(top left, #11998e, #38ef7d);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        -o-text-fill-color: transparent;
+        font-weight: 600;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 29px;
+        font-size: 36px;
+        line-height: 48px;
+        color: #1a1e1a;
+        font-weight: 500;
+    }
+    p {
+        font-weight: 400;
+        letter-spacing: 0.03px;
+        margin-bottom: 27px;
+    }
+    padding: 94px 0px 99px 0px;
+    .awards {
+        height: 201px;
+        float: left;
+        width: 33.33%;
+        background-color: #393939;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        padding: 43px 0px 33px 0px;
+        i {
+            margin-bottom: 30px;
+            font-size: 55px;
+            line-height: normal;
+            color: #2bd383;
+        }
+        h6 {
+            line-height: 22px;
+            font-weight: 500;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.25px;
+        }
+    }
 }
 
 
+.parallax-about-0 {
 
+    background-image: url('../img/parallax/parallax-quote-style2.jpg');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 47% 50%;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 109px 0px 115px 0px;
+
+}
