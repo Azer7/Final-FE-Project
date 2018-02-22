@@ -38,11 +38,81 @@ $(document).ready(function () {
 //     $(this).find(".dropdown-menu").removeClass("show");
 // });
 
-// $(window).scroll(function() {
-//     console.log($(this).scrollTop());
-//     if($(this).scrollTop()>10) {
-//         $( "#headerA" ).addClass("scrolled2");
-//     } else if($(this).scrollTop()<10) {
-//         $( "#headerA" ).removeClass("scrolled2");
-//     }
-// });
+$(window).scroll(function() {
+    console.log($(this).scrollTop());
+    if($(this).scrollTop()>600) {
+        $( "#header" ).addClass("scrolled");
+    } else if($(this).scrollTop()<600) {
+        $( "#header" ).removeClass("scrolled");
+    }
+});
+
+function move() {
+    var elem = document.getElementById("myBar"); 
+    var from = $( "#myBar" ).data("from");
+    var to = $( "#myBar" ).data("to");
+    var id = setInterval(frame, 300);
+    function frame() {
+      if (from == to) {
+        clearInterval(id);
+      } else {
+        from++; 
+        elem.innerHTML = from * 1  + '';
+      }
+    }
+  }
+  move()
+
+  function move2() {
+    var elem2 = document.getElementById("myBar2"); 
+    var from2 = $( "#myBar2" ).data("from");
+    var to2 = $( "#myBar2" ).data("to");
+    var id2 = setInterval(frame, 1);
+    function frame() {
+      if (from2 >= to2) {
+        clearInterval(id2);
+      } else {
+        from2++; 
+
+        elem2.innerHTML = from2 * 1  + '';
+      }
+    }
+  }
+  move2()
+
+  function move3() {
+    var elem3 = document.getElementById("myBar3"); 
+    var from3 = $( "#myBar3" ).data("from");
+    var to3 = $( "#myBar3" ).data("to");
+    var id3 = setInterval(frame, 6);
+    function frame() {
+      if (from3 >= to3) {
+        clearInterval(id3);
+      } else {
+        from3++; 
+
+        elem3.innerHTML = from3 * 1  + '';
+      }
+    }
+  }
+  move3()
+
+  function move4() {
+    var elem4 = document.getElementById("myBar4"); 
+    var from4 = $( "#myBar4" ).data("from");
+    var to4 = $( "#myBar4" ).data("to");
+    var id4 = setInterval(frame, 1);
+    function frame() {
+      if (from4 >= to4) {
+        clearInterval(id4);
+      } else {
+        from4++; 
+
+        elem4.innerHTML = from4 * 1  + '';
+      }
+    }
+  }
+  move4()
+
+  
+console.log(elem4) ;
