@@ -53,9 +53,9 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     //console.log($(this).scrollTop());
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 10) {
       $("#header2").addClass("scrolled");
-    } else if ($(this).scrollTop() < 100) {
+    } else if ($(this).scrollTop() < 10) {
       $("#header2").removeClass("scrolled");
     }
   });
