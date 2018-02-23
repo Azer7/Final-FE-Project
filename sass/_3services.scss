@@ -9,13 +9,93 @@
         padding: 0px;
         text-align: left;
         transition: all 1s;
-        &:hover i{
-            transform: rotateY(180deg);
-            // transition: all 1s;
+        &:hover i {
+            transform: rotateY(180deg); // transition: all 1s;
         }
-        i{
+        i {
             transition: all 1s;
             margin: 0px;
         }
     }
+}
+
+.prices {
+    text-align: center;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    .prices-header {
+        .value{
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #2bd383;
+            text-align: center;
+            padding: 26px;
+            margin: 0px auto 26px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        span{
+            display: block;
+        }
+        padding-top: 36px;
+        margin-bottom: 19px;
+        .price-number {
+            font-family: "Arial";
+            font-size: 36px;
+            line-height: 36px;
+            color: #1a1e1a;
+        }
+        .price-year {
+            font-family: "Arial";
+            font-size: 14px;
+            line-height: 18px;
+            color: #1a1e1a;
+        }
+        .title-price{
+            margin: 35px auto;
+            line-height: 31px;
+            color: #1a1e1a;
+            text-transform: uppercase;
+            letter-spacing: 0.25px;
+            font-size: 20px;
+        }
+    }
+
+    .prices-text{
+        ul{
+            margin: 100px auto!important;
+        }
+
+        li{
+            line-height: 38px;
+            color: #969696;
+        }
+    }
+
+    .price-btn{
+        margin-bottom: 24px;
+        color: #969696;
+        padding: 9px 70px;
+        background: transparent;
+        display: inline-block;
+        z-index: 1;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #2bd383;
+        border-radius: 5px;
+    }
+}
+
+#pricing{
+    padding: 124px 0px 130px 0px;
+    background: #f5f5f5;
 }

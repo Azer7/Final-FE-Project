@@ -1,12 +1,42 @@
 $(document).ready(function () {
+    
+    $(window).on('load', function () {
+        setTimeout(function () {
+            $('.loading-overlay').hide();
+        }, 1500);
+    });
 
-  
-  $('#da-thumbs > li').hoverdir();
 
-  $('#myCarousel').carousel({
-    interval: 2000,
-    cycle: true
-  }); 
+    var owl = $('#owl-carousel1');
+    owl.owlCarousel({
+        items: 5,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+    });
+
+    var owl2 = $('#owl-carousel2');
+    owl2.owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: false,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: true
+    });
+
+    var mixer = mixitup('.items-container');
+
+});
+
+// $('.dropdown').hover(function () {
+//    $(this).addClass("show");
+//    $(this).find(".dropdown-menu").addClass("show");
+// },function(){
+//     $(this).removeClass("show");
+//     $(this).find(".dropdown-menu").removeClass("show");
+// });
 
   // SCROLL IN INDEX
 
@@ -30,74 +60,11 @@ $(document).ready(function () {
     }
   });
 
-  $(window).on('load', function () {
-    setTimeout(function () {
-      $('.loading-overlay').hide();
-    }, 1500);
-  });
-
-
-    // OWL INDEX FOOTER
-  var owl = $('#owl-carousel1');
-  owl.owlCarousel({
-    items: 5,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-  });
-
-  // OWL INDEX ABOVE FOOTER
-  var owl2 = $('#owl-carousel2');
-  owl2.owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: false,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    nav: true
-  });
-
- // ABOUT COUNTER
-
-  $('.count').each(function () {
-    $(this).prop('Counter', 0).animate({
-      Counter: $(this).text()
-    }, {
-      duration: 2000,
-      easing: 'swing',
-      step: function (now) {
-        $(this).text(Math.ceil(now));
-      }
-    });
-  });
-
-  // MIXER LIKE ISOTOPE
-
-  var mixer = mixitup('.items-container');
-
-});
-
-
-
-
-
-
-// $('.dropdown').hover(function () {
-//    $(this).addClass("show");
-//    $(this).find(".dropdown-menu").addClass("show");
-// },function(){
-//     $(this).removeClass("show");
-//     $(this).find(".dropdown-menu").removeClass("show");
-// });
-
-
-
 // function move() {
 //     var elem = document.getElementById("myBar"); 
 //     var from = $( "#myBar" ).data("from");
 //     var to = $( "#myBar" ).data("to");
-//     var id = setInterval(frame, 100);
+//     var id = setInterval(frame, 300);
 //     function frame() {
 //       if (from == to) {
 //         clearInterval(id);
@@ -119,6 +86,7 @@ $(document).ready(function () {
 //         clearInterval(id2);
 //       } else {
 //         from2++; 
+
 //         elem2.innerHTML = from2 * 1  + '';
 //       }
 //     }
@@ -135,6 +103,7 @@ $(document).ready(function () {
 //         clearInterval(id3);
 //       } else {
 //         from3++; 
+
 //         elem3.innerHTML = from3 * 1  + '';
 //       }
 //     }
@@ -142,20 +111,20 @@ $(document).ready(function () {
 //   move3()
 
 //   function move4() {
-
 //     var elem4 = document.getElementById("myBar4"); 
 //     var from4 = $( "#myBar4" ).data("from");
 //     var to4 = $( "#myBar4" ).data("to");
 //     var id4 = setInterval(frame, 1);
-
 //     function frame() {
 //       if (from4 >= to4) {
 //         clearInterval(id4);
 //       } else {
 //         from4++; 
+
 //         elem4.innerHTML = from4 * 1  + '';
 //       }
 //     }
-
 //   }
 //   move4()
+
+  
