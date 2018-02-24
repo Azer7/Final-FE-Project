@@ -128,3 +128,14 @@ $(window).scroll(function () {
 //     }
 //   }
 //   move4()
+
+
+
+
+$( ".blog-ul2 a" ).hover(
+  function() {
+    $( this ).addClass( "active22" );
+  }, function() {
+    $( this ).removeClass( "active22" );
+  }
+);
