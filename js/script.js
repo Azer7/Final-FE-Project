@@ -1,33 +1,35 @@
 $(document).ready(function () {
-    
-    $(window).on('load', function () {
-        setTimeout(function () {
-            $('.loading-overlay').hide();
-        }, 1500);
-    });
+
+  $(window).on('load', function () {
+    setTimeout(function () {
+      $('.loading-overlay').hide();
+    }, 1500);
+  });
 
 
-    var owl = $('#owl-carousel1');
-    owl.owlCarousel({
-        items: 5,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-    });
+  var owl = $('#owl-carousel1');
+  owl.owlCarousel({
+    items: 5,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+  });
 
-    var owl2 = $('#owl-carousel2');
-    owl2.owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        nav: true
-    });
+  var owl2 = $('#owl-carousel2');
+  owl2.owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: false,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    nav: true
+  });
 
-    var mixer = mixitup('.items-container');
+  var mixer = mixitup('.items-container');
 
+
+ 
 });
 
 // $('.dropdown').hover(function () {
@@ -38,27 +40,27 @@ $(document).ready(function () {
 //     $(this).find(".dropdown-menu").removeClass("show");
 // });
 
-  // SCROLL IN INDEX
+// SCROLL IN INDEX
 
-  $(window).scroll(function () {
-    // console.log($(this).scrollTop());
-    if ($(this).scrollTop() > 600) {
-      $("#header").addClass("scrolled");
-    } else if ($(this).scrollTop() < 600) {
-      $("#header").removeClass("scrolled");
-    }
-  });
+$(window).scroll(function () {
+  // console.log($(this).scrollTop());
+  if ($(this).scrollTop() > 600) {
+    $("#header").addClass("scrolled");
+  } else if ($(this).scrollTop() < 600) {
+    $("#header").removeClass("scrolled");
+  }
+});
 
-    // SCROLL IN OTHER PAGES
+// SCROLL IN OTHER PAGES
 
-  $(window).scroll(function () {
-    //console.log($(this).scrollTop());
-    if ($(this).scrollTop() > 10) {
-      $("#header2").addClass("scrolled");
-    } else if ($(this).scrollTop() < 10) {
-      $("#header2").removeClass("scrolled");
-    }
-  });
+$(window).scroll(function () {
+  //console.log($(this).scrollTop());
+  if ($(this).scrollTop() > 10) {
+    $("#header2").addClass("scrolled");
+  } else if ($(this).scrollTop() < 10) {
+    $("#header2").removeClass("scrolled");
+  }
+});
 
 // function move() {
 //     var elem = document.getElementById("myBar"); 
@@ -126,5 +128,3 @@ $(document).ready(function () {
 //     }
 //   }
 //   move4()
-
-  
