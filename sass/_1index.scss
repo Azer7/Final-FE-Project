@@ -1,7 +1,7 @@
-
-.navbar{
+.navbar {
     margin-left: 221px;
 }
+
 #intro {
     background-image: url("../img/intro-01.jpg");
     background-repeat: no-repeat;
@@ -12,6 +12,7 @@
     position: relative;
     background-attachment: fixed;
 }
+
 .overlay {
     background: linear-gradient(-45deg, #11998e, #38ef7d);
     background: -ms-linear-gradient(-45deg, #11998e, #38ef7d);
@@ -24,16 +25,17 @@
     height: 100%;
     left: 0;
     top: 0;
-}   
-#intro .btn{
+}
+
+#intro .btn {
     border-color: #fff;
     background: #fff;
     color: #2bd383;
 }
 
-
 #blog {
     margin-bottom: 130px;
+    margin-top: 390px;
     h1 {
         margin: auto;
         color: black;
@@ -65,6 +67,20 @@
         overflow: hidden;
         border: 1px solid #2bd383;
         border-radius: 5px;
+        &:after{
+            background: #2bd383;
+            content: "";
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .3s;
+        }
+        &:hover::after{
+            width: 100%;
+        }
     }
     background-image: url('../img/parallax/parallax-quote-style2.jpg');
     width: 100%;
@@ -85,8 +101,95 @@
 }
 
 .choose-us {
+    .div67procentov{
+        width: 171%;
+        background: #1a1823;
+    }
+    margin-top: 240px;
+    .number-liness {
+        background: #1a1823;
+        margin-bottom: 135px;
+        margin-top: 115px;
+        .name-counter{
+            color: #a4a2a9;
+        }
+        .text-counter {
+            width: 10%;
+            float: right;
+            padding: 40px 0px 46px 0px;
+            text-align: center;
+            position: relative;
+            overflow: visible;
+            z-index: 1;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            color: white;
+            &::after{
+                content: "";
+                width: 101%;
+                height: 110%;
+                background: linear-gradient(45deg, #11998e, #38ef7d);
+                background: -ms-linear-gradient(45deg, #11998e, #38ef7d);
+                background: -webkit-linear-gradient(45deg, #11998e, #38ef7d);
+                background: -o-linear-gradient(45deg, #11998e, #38ef7d);
+                background: -ms-linear-gradient(45deg, #11998e, #38ef7d);
+                -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+                box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+                position: absolute;
+                top: -7px;
+                left: 0;
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                -webkit-transform: translate3d(0,5%,0);
+                -moz-transform: translate3d(0,5%,0);
+                -ms-transform: translate3d(0,5%,0);
+                -o-transform: translate3d(0,5%,0);
+                transform: translate3d(0,5%,0);
+                -webkit-transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -ms-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+            }
+            &:hover::after {
+                opacity: 1;
+                visibility: visible;
+                -webkit-transform: translate3d(0,0,0);
+                -moz-transform: translate3d(0,0,0);
+                -ms-transform: translate3d(0,0,0);
+                -o-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+            
+            .count{
+                font-size: 55px;
+                line-height: 55px;
+            }
+
+        }
+    }
     .choose-bottom {
         width: 33%;
+        ul {
+            padding: 36px 0px 23px 30px;
+            li {
+                margin-bottom: 12px;
+                span {
+                    font-weight: bold;
+                    color: #fff;
+                }
+                h6 {
+                    line-height: 22px;
+                    font-weight: 500;
+                    color: #fff;
+                    letter-spacing: 0.1px;
+                }
+            }
+        }
     }
     .number-list {
         width: 21px;
@@ -109,6 +212,10 @@
         transition: all 0.3s ease-in-out;
     }
     .choose-title p {
+        line-height: 24px;
+        color: #555;
+        font-weight: 400;
+        letter-spacing: 0.18px;
         text-align: center;
     }
     h2 {
@@ -122,9 +229,21 @@
 }
 
 .about {
+    .aboutus-title {
+        margin-top: 100px;
+    }
+    margin-top: 150px;
+    h2 {
+        font-size: 36px;
+        line-height: 48px;
+        color: #1a1e1a;
+        font-weight: 500;
+        margin: auto;
+    }
     img {
         max-width: 100%;
         height: auto;
+        float: right;
     }
     p {
         line-height: 24px;
@@ -185,8 +304,12 @@
 .services {
     .service-logo {
         text-align: center;
+        margin-top: 130px;
         h1 {
             color: black;
+        }
+        p{
+            margin-top: 15px;
         }
     }
     .service-input {

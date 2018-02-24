@@ -858,7 +858,8 @@ p {
   color: #2bd383; }
 
 #blog {
-  margin-bottom: 130px; }
+  margin-bottom: 130px;
+  margin-top: 390px; }
   #blog h1 {
     margin: auto;
     color: black;
@@ -894,6 +895,18 @@ p {
     overflow: hidden;
     border: 1px solid #2bd383;
     border-radius: 5px; }
+    .parallax .para-button:after {
+      background: #2bd383;
+      content: "";
+      width: 0%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .3s; }
+    .parallax .para-button:hover::after {
+      width: 100%; }
   .parallax .quote-title {
     font-size: 36px;
     line-height: normal;
@@ -901,48 +914,138 @@ p {
     color: #fff;
     letter-spacing: 0.2px; }
 
-.choose-us .choose-bottom {
-  width: 33%; }
-.choose-us .number-list {
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  background: transparent;
-  border: 1px solid #fff;
-  text-align: center;
-  line-height: 21px;
-  float: left;
-  margin-right: 21px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-.choose-us .choose-title p {
-  text-align: center; }
-.choose-us h2 {
-  font-size: 36px;
-  line-height: 48px;
-  color: #1a1e1a;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 25px; }
+.choose-us {
+  margin-top: 240px; }
+  .choose-us .div67procentov {
+    width: 171%;
+    background: #1a1823; }
+  .choose-us .number-liness {
+    background: #1a1823;
+    margin-bottom: 135px;
+    margin-top: 115px; }
+    .choose-us .number-liness .name-counter {
+      color: #a4a2a9; }
+    .choose-us .number-liness .text-counter {
+      width: 10%;
+      float: right;
+      padding: 40px 0px 46px 0px;
+      text-align: center;
+      position: relative;
+      overflow: visible;
+      z-index: 1;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      color: white; }
+      .choose-us .number-liness .text-counter::after {
+        content: "";
+        width: 101%;
+        height: 110%;
+        background: linear-gradient(45deg, #11998e, #38ef7d);
+        background: -ms-linear-gradient(45deg, #11998e, #38ef7d);
+        background: -webkit-linear-gradient(45deg, #11998e, #38ef7d);
+        background: -o-linear-gradient(45deg, #11998e, #38ef7d);
+        background: -ms-linear-gradient(45deg, #11998e, #38ef7d);
+        -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: -7px;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate3d(0, 5%, 0);
+        -moz-transform: translate3d(0, 5%, 0);
+        -ms-transform: translate3d(0, 5%, 0);
+        -o-transform: translate3d(0, 5%, 0);
+        transform: translate3d(0, 5%, 0);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      .choose-us .number-liness .text-counter:hover::after {
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); }
+      .choose-us .number-liness .text-counter .count {
+        font-size: 55px;
+        line-height: 55px; }
+  .choose-us .choose-bottom {
+    width: 33%; }
+    .choose-us .choose-bottom ul {
+      padding: 36px 0px 23px 30px; }
+      .choose-us .choose-bottom ul li {
+        margin-bottom: 12px; }
+        .choose-us .choose-bottom ul li span {
+          font-weight: bold;
+          color: #fff; }
+        .choose-us .choose-bottom ul li h6 {
+          line-height: 22px;
+          font-weight: 500;
+          color: #fff;
+          letter-spacing: 0.1px; }
+  .choose-us .number-list {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 21px;
+    float: left;
+    margin-right: 21px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .choose-us .choose-title p {
+    line-height: 24px;
+    color: #555;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    text-align: center; }
+  .choose-us h2 {
+    font-size: 36px;
+    line-height: 48px;
+    color: #1a1e1a;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 25px; }
 
-.about img {
-  max-width: 100%;
-  height: auto; }
-.about p {
-  line-height: 24px;
-  margin-bottom: 24px; }
-.about .about-h6 {
-  line-height: normal;
-  letter-spacing: 9.8px;
-  color: #1a1e1a;
-  margin: 0px 0px 22px 2px; }
+.about {
+  margin-top: 150px; }
+  .about .aboutus-title {
+    margin-top: 100px; }
+  .about h2 {
+    font-size: 36px;
+    line-height: 48px;
+    color: #1a1e1a;
+    font-weight: 500;
+    margin: auto; }
+  .about img {
+    max-width: 100%;
+    height: auto;
+    float: right; }
+  .about p {
+    line-height: 24px;
+    margin-bottom: 24px; }
+  .about .about-h6 {
+    line-height: normal;
+    letter-spacing: 9.8px;
+    color: #1a1e1a;
+    margin: 0px 0px 22px 2px; }
 
 .parallax-megin {
   width: 100%;
@@ -982,9 +1085,12 @@ p {
       margin: auto; }
 
 .services .service-logo {
-  text-align: center; }
+  text-align: center;
+  margin-top: 130px; }
   .services .service-logo h1 {
     color: black; }
+  .services .service-logo p {
+    margin-top: 15px; }
 .services .service-input {
   padding: 40px;
   float: none;
