@@ -10,7 +10,6 @@ body {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-family: 'Poppins', sans-serif;
-    
 }
 
 a,
@@ -784,16 +783,16 @@ p {
     line-height: 24px;
 }
 
-#header{
+#header {
     position: fixed;
     z-index: 1;
     width: 100%;
     background: none;
     transition: all 0.7s;
-    
 }
-#header.scrolled{
-    background-color: rgba(26,30,26,0.7);   
+
+#header.scrolled {
+    background-color: rgba(26, 30, 26, 0.7);
     transition: all 0.7s;
     padding-top: 0;
     padding-bottom: 0;
@@ -838,18 +837,16 @@ p {
 #footer {
     background-color: #151515;
     padding: 80px 0px 80px 0px;
-    .insta-hover{
-
+    .insta-hover {
         display: inline-block;
         background: -webkit-linear-gradient(45deg, rgba(17, 153, 142, 0.7), rgba(56, 239, 125, 0.7));
-        img{
+        img {
             transition: all 1s;
         }
-        &:hover img{
+        &:hover img {
             opacity: 0.3;
         }
     }
-    
     .foot1 {
         margin-left: -15px;
         img {
@@ -1003,8 +1000,55 @@ p {
     padding-right: 12px;
 }
 
+#our-team{
+    .snake{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        .overlay {
+            position: absolute;
+            opacity: 0.9;
+            text-align: center;
+            padding-top: 60px;
+            background: linear-gradient(45deg, rgba(17, 153, 142, 0.7), rgba(56, 239, 125, 0.7));
+            z-index: 3;
+            .title {
+                font-size: 15px;
+                font-weight: bold;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
 
+#welcome-ibox{
+    .snake{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        .overlay {
+            position: absolute;
+            opacity: 0.9;
+            text-align: center;
+            padding-top: 60px;
+            background-color: rgba(26, 30, 26, 0.3);
+            z-index: 3;
+            .title {
+                font-size: 15px;
+                font-weight: bold;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
 
+}
+.greybackground{
+    background-color: #393939;
+}
 
 @import '1index';
 @import '2about';
@@ -1013,3 +1057,8 @@ p {
 @import '6blog';
 @import '7blog-single';
 @import '8contact';
+
+.padding0{
+    padding: 0;
+}
+

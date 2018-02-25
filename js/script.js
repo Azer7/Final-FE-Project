@@ -129,6 +129,8 @@ $(window).scroll(function () {
 //   }
 //   move4()
 
+
+
 $('.count').each(function () {
   $(this).prop('Counter',0).animate({
       Counter: $(this).text()
@@ -148,4 +150,10 @@ $( ".blog-ul2 a" ).hover(
   }, function() {
     $( this ).removeClass( "active22" );
   }
+
+  
 );
+
+$(".snake").snakeify({
+  speed: 200
+});

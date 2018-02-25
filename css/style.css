@@ -826,6 +826,45 @@ p {
 .flat-information li.phone a i {
   padding-right: 12px; }
 
+#our-team .snake {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+  #our-team .snake .overlay {
+    position: absolute;
+    opacity: 0.9;
+    text-align: center;
+    padding-top: 60px;
+    background: linear-gradient(45deg, rgba(17, 153, 142, 0.7), rgba(56, 239, 125, 0.7));
+    z-index: 3; }
+    #our-team .snake .overlay .title {
+      font-size: 15px;
+      font-weight: bold;
+      display: block;
+      width: 100%; }
+
+#welcome-ibox .snake {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+  #welcome-ibox .snake .overlay {
+    position: absolute;
+    opacity: 0.9;
+    text-align: center;
+    padding-top: 60px;
+    background-color: rgba(26, 30, 26, 0.3);
+    z-index: 3; }
+    #welcome-ibox .snake .overlay .title {
+      font-size: 15px;
+      font-weight: bold;
+      display: block;
+      width: 100%; }
+
+.greybackground {
+  background-color: #393939; }
+
 .navbar {
   margin-left: 221px; }
 
@@ -839,7 +878,7 @@ p {
   position: relative;
   background-attachment: fixed; }
 
-.overlay {
+.overlay111 {
   background: linear-gradient(-45deg, #11998e, #38ef7d);
   background: -ms-linear-gradient(-45deg, #11998e, #38ef7d);
   background: -webkit-linear-gradient(-45deg, #11998e, #38ef7d);
@@ -1157,7 +1196,13 @@ p {
     margin: 0%; }
 
 #ibox-third {
-  padding: 48px 0px 48px 0px; }
+  padding: 48px 0px 48px 0px;
+  margin-bottom: 87px; }
+  #ibox-third .text-ibox span {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
+    color: #feffff; }
 
 .parallax-about {
   background-image: url("../img/parallax/parallax-counters.jpg");
@@ -1266,12 +1311,11 @@ p {
   #welcome-ibox .awards {
     height: 201px;
     float: left;
-    width: 33.33%;
+    width: 100%;
     background-color: #393939;
     text-align: center;
     position: relative;
     overflow: hidden;
-    z-index: 1;
     padding: 43px 0px 33px 0px; }
     #welcome-ibox .awards i {
       margin-bottom: 30px;
@@ -1326,9 +1370,39 @@ p {
   #header2 a {
     color: black; }
   #header2.scrolled {
-    z-index: 2;
+    z-index: 999;
     transition: all 0.7s;
     top: 0; }
+
+#our-team .title {
+  margin: auto;
+  font-size: 36px;
+  line-height: 48px;
+  color: #1a1e1a;
+  font-weight: 500;
+  margin-bottom: 65px; }
+#our-team .input {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 103px 0px 0px 0px; }
+  #our-team .input .name {
+    color: #1a1e1a;
+    margin-bottom: 7px; }
+  #our-team .input .position {
+    font-size: 20px;
+    line-height: 31px;
+    color: #2bd383;
+    font-weight: 500;
+    margin-bottom: 6px; }
+  #our-team .input p {
+    line-height: 24px;
+    color: #717779;
+    text-align: center;
+    padding: 0px 17px 0px 17px;
+    margin-bottom: 52px; }
+#our-team .margintopbottom2595 {
+  margin-top: 25px;
+  margin-bottom: 95px; }
 
 #services {
   margin: 95px auto; }
@@ -1540,5 +1614,8 @@ p {
           border-color: #1a1e1a; }
         #contact .contact-form label button:hover::after {
           width: 100%; }
+
+.padding0 {
+  padding: 0; }
 
 /*# sourceMappingURL=style.css.map */

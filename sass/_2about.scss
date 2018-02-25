@@ -1,5 +1,12 @@
 #ibox-third {
     padding: 48px 0px 48px 0px;
+    margin-bottom: 87px;
+    .text-ibox span{
+        font-size: 24px;
+    line-height: 31px;
+    font-weight: 700;
+    color: #feffff;
+    }
 }
 
 .parallax-about {
@@ -125,18 +132,19 @@
     .awards {
         height: 201px;
         float: left;
-        width: 33.33%;
+        width: 100%;
         background-color: #393939;
         text-align: center;
         position: relative;
         overflow: hidden;
-        z-index: 1;
         padding: 43px 0px 33px 0px;
         i {
             margin-bottom: 30px;
             font-size: 55px;
             line-height: normal;
             color: #2bd383;
+
+
         }
         h6 {
             line-height: 22px;
@@ -146,6 +154,7 @@
             letter-spacing: 0.25px;
         }
     }
+
 }
 
 .parallax-about-0 {
@@ -199,8 +208,50 @@
         color: black;
     }
     &.scrolled {
-        z-index: 2;
+        z-index: 999;
         transition: all 0.7s;
         top: 0;
     }
+}
+
+#our-team{
+    .title{
+        margin: auto;
+        font-size: 36px;
+        line-height: 48px;
+        color: #1a1e1a;
+        font-weight: 500;
+        margin-bottom: 65px;
+    }
+
+    .input{
+        background-color: #f9f9f9;
+        text-align: center;
+        padding: 103px 0px 0px 0px;
+        .name{
+            color: #1a1e1a;
+    margin-bottom: 7px;
+        }
+        .position{
+            font-size: 20px;
+            line-height: 31px;
+            color: #2bd383;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+        p{
+            line-height: 24px;
+            color: #717779;
+            text-align: center;
+            padding: 0px 17px 0px 17px;
+            margin-bottom: 52px;
+        }
+        
+    }
+    .margintopbottom2595{
+        margin-top: 25px;
+        margin-bottom: 95px;
+    }
+
+
 }
