@@ -13,6 +13,8 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/animate.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
@@ -67,7 +69,7 @@
     </div>
 
     <!-- HEADER -->
-    <section id="header2">
+    <!-- <section id="header2">
         <nav class="navbar navbar-expand-lg">
             <div class="logo">
                 <a href="index.html">
@@ -95,12 +97,104 @@
                 </li>
             </ul>
         </nav>
+    </section> -->
+    <section class="menu-wrap">
+        <nav class="menu">
+            <a href="index.html">
+                <img src="img/logo.png" alt="image">
+            </a>
+            <ul class="clearfix">
+
+                <li>
+                    <a href="#">HOME
+                        <!-- <span class="arrow">&#9660;</span> -->
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Home 01</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 02</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 03</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">ABOUT</a>
+                </li>
+
+                <li class="current-item">
+                    <a href="#">SERVICES</a>
+                </li>
+
+                <li>
+                    <a href="#">PORTFOLIO
+                        <!-- <span class="arrow">&#9660;</span> -->
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Portfolio 01</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio 01</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio Single</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">BLOG
+                        <!-- <span class="arrow">&#9660;</span> -->
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Blog 01</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog 02</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog 03</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog Single</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">CONTACT
+                        <!-- <span class="arrow">&#9660;</span> -->
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">Contact 01</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact 02</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="show-search">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
     </section>
     <!-- HEADER-Parallax -->
-    <section class="parallax-about-0">
+    <section class="parallax-about-0 margbottom103">
+        <div class="overlayheader1"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" style="    padding-bottom: 120px;">
                     <div class="about-heading">
                         <h1 class="title">
                             Services
@@ -135,7 +229,7 @@
                                 </h5>
                             </div>
 
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                                     text ever since the 1500s, when an unknown printer took a galley of type and scrambled
@@ -145,14 +239,14 @@
                         </div>
 
                         <div class="card">
-                            <div class="card-header" id="headingTwo">
+                            <div class="card-header active444" id="headingTwo">
                                 <h5 class="mb-0">
                                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         Finibus Bonorum et Malorum
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
                                 <div class="card-body">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                                     text ever since the 1500s, when an unknown printer took a galley of type and scrambled
@@ -185,28 +279,28 @@
                 <div class="col-md-6">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/services/box-image-01.jpg" alt="First slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="img/services/box-image-01.jpg"  alt="Second slide">
-                          </div>
-                          <div class="carousel-item">
-                            <img class="d-block w-100" src="img/services/box-image-01.jpg"  alt="Third slide">
-                          </div>
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/services/box-image-01.jpg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/services/box-image-01.jpg" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/services/box-image-01.jpg" alt="Third slide">
+                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
                         </a>
                         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
                         </a>
                     </div>
                 </div>
@@ -290,7 +384,7 @@
     </section>
 
     <!-- Parallax Section -->
-    <section class=".row-quote.style2 parallax">
+    <section class=".row-quote.style2 parallax padding4stuk">
         <div class="container">
             <div class="row">
                 <div class="flat-quote clearfix text-center">
@@ -307,7 +401,170 @@
 
     <!-- Pricing Plans-->
 
-    <section id="pricing">
+
+    <section id="our-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Pricing Plans</h1>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="team-member team-member2">
+                        <div class="snake">
+                            <div class="overlay">
+                            </div>
+                            <div class="prices">
+                                    <div class="prices-header">
+                                        <div class="value">
+                                            <span class="price-number">$22</span>
+                                            <span class="price-year">year</span>
+                                        </div>
+                                        <div class="title-price">
+                                            <h2>
+                                                Stater Package
+                                            </h2>
+                                        </div>
+            
+                                    </div>
+                                    <div class="price-text">
+                                        <ul class="content-price">
+                                            <li>Duration : 1 year</li>
+                                            <li>Marketing</li>
+                                            <li>Design Brand</li>
+                                            <li>Contact Display</li>
+                                            <li>Image Gallery</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button>Contact us</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="team-member team-member2">
+                        <div class="snake">
+                            <div class="overlay">
+                            </div>
+                            <div class="prices">
+                                    <div class="prices-header">
+                                        <div class="value">
+                                            <span class="price-number">$30</span>
+                                            <span class="price-year">year</span>
+                                        </div>
+                                        <div class="title-price">
+                                            <h2>
+                                                GOLD PACKAGE
+                                            </h2>
+                                        </div>
+            
+                                    </div>
+                                    <div class="price-text">
+                                        <ul class="content-price">
+                                            <li>Duration : 1 year</li>
+                                            <li>Marketing</li>
+                                            <li>Design Brand</li>
+                                            <li>Contact Display</li>
+                                            <li>Image Gallery</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button>Contact us</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="team-member team-member2">
+                        <div class="snake">
+                            <div class="overlay">
+                            </div>
+                            <div class="prices">
+                                    <div class="prices-header">
+                                        <div class="value">
+                                            <span class="price-number">$35</span>
+                                            <span class="price-year">year</span>
+                                        </div>
+                                        <div class="title-price">
+                                            <h2>
+                                                PLATINUM PACKAGE
+                                            </h2>
+                                        </div>
+            
+                                    </div>
+                                    <div class="price-text">
+                                        <ul class="content-price">
+                                            <li>Duration : 1 year</li>
+                                            <li>Marketing</li>
+                                            <li>Design Brand</li>
+                                            <li>Contact Display</li>
+                                            <li>Image Gallery</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button>Contact us</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="team-member team-member2">
+                        <div class="snake">
+                            <div class="overlay">
+                            </div>
+                            <div class="prices">
+                                    <div class="prices-header">
+                                        <div class="value">
+                                            <span class="price-number">$22</span>
+                                            <span class="price-year">year</span>
+                                        </div>
+                                        <div class="title-price">
+                                            <h2>
+                                                DIAMOND PACKAGE
+                                            </h2>
+                                        </div>
+            
+                                    </div>
+                                    <div class="price-text">
+                                        <ul class="content-price">
+                                            <li>Duration : 1 year</li>
+                                            <li>Marketing</li>
+                                            <li>Design Brand</li>
+                                            <li>Contact Display</li>
+                                            <li>Image Gallery</li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-btn">
+                                        <button>Contact us</button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- <section id="pricing">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -433,106 +690,106 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- Footer -->
     <footer id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="foot1">
-                            <img src="img/logo-footer.png" alt="">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                industry's.
-                            </p>
-                            <h2 class="widget-title">Follow us</h2>
-                            <div class="flat-social style2">
-                                <a href="#">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-google-plus" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </a>
-                                <a href="#">
-                                    <i class="fa fa-vimeo" aria-hidden="true"></i>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="foot1">
+                        <img src="img/logo-footer.png" alt="">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's.
+                        </p>
+                        <h2 class="widget-title">Follow us</h2>
+                        <div class="flat-social style2">
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-vimeo" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="foot2">
+                        <h2>Twitter</h2>
+                        <p>
+                            <span>@Simmons </span>Lorem Ipsum is simply
+                            <br> dummy text of the printing and
+                            <br>typesetting.I am so happy.</p>
+                        <p>
+                            <span>@Leonard </span>I am so happy because I
+                            <br>found this Real Stata, and it just made
+                            <br> Podes easier.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="foot3">
+                        <h2>Instagram</h2>
+                        <div class="instaimage">
+                            <div class="insta-hover">
+                                <a href="">
+                                    <img src="img/instagram/instagram-01.jpg" alt="image">
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="foot2">
-                            <h2>Twitter</h2>
-                            <p>
-                                <span>@Simmons </span>Lorem Ipsum is simply
-                                <br> dummy text of the printing and
-                                <br>typesetting.I am so happy.</p>
-                            <p>
-                                <span>@Leonard </span>I am so happy because I
-                                <br>found this Real Stata, and it just made
-                                <br> Podes easier.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="foot3">
-                            <h2>Instagram</h2>
-                            <div class="instaimage">
-                                <div class="insta-hover">
-                                    <a href="">
-                                        <img src="img/instagram/instagram-01.jpg" alt="image">
-                                    </a>
-                                </div>
-    
-                                <div class="insta-hover">
-                                    <a href="">
-                                        <img src="img/instagram/instagram-02.jpg" alt="image">
-                                    </a>
-                                </div>
-                                <div class="insta-hover">
-                                    <a href="">
-                                        <img src="img/instagram/instagram-03.jpg" alt="image">
-                                    </a>
-                                </div>
-                                <div class="insta-hover">
-                                    <a href="">
-                                        <img src="img/instagram/instagram-04.jpg" alt="image">
-                                    </a>
-                                </div>
-                                <div class="insta-hover">
-                                    <a href="">
-                                        <img src="img/instagram/instagram-05.jpg" alt="image">
-                                    </a>
-                                </div>
-                                <div class="insta-hover">
-                                    <a href="">
-                                        <img src="img/instagram/instagram-06.jpg" alt="image">
-                                    </a>
-                                </div>
+
+                            <div class="insta-hover">
+                                <a href="">
+                                    <img src="img/instagram/instagram-02.jpg" alt="image">
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="foot4">
-                            <h2>Subscribe us</h2>
-                            <div class="legend text-white">Email address</div>
-                            <div class="inputplain">
-                                <input type="text" tabindex="1" id="subscribe-email" name="subscribe-email" placeholder="Your email address...">
-                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                            <div class="insta-hover">
+                                <a href="">
+                                    <img src="img/instagram/instagram-03.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="insta-hover">
+                                <a href="">
+                                    <img src="img/instagram/instagram-04.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="insta-hover">
+                                <a href="">
+                                    <img src="img/instagram/instagram-05.jpg" alt="image">
+                                </a>
+                            </div>
+                            <div class="insta-hover">
+                                <a href="">
+                                    <img src="img/instagram/instagram-06.jpg" alt="image">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="foot4">
+                        <h2>Subscribe us</h2>
+                        <div class="legend text-white">Email address</div>
+                        <div class="inputplain">
+                            <input type="text" tabindex="1" id="subscribe-email" name="subscribe-email" placeholder="Your email address...">
+                            <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     <!-- Copyright -->
     <div class="bottom">
         <div class="container">
@@ -580,16 +837,21 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <!-- Java Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.0/mixitup.min.js"></script>
     <script src="js/jquery.hoverdir.js"></script>
     <script src="js/modernizr.custom.97074.js"></script>
+    <script src="js/popper.min.js"></script>
+
+
+    <script src="js/bootstrap-dropdownhover.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/snake.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

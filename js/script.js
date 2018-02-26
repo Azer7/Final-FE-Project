@@ -157,3 +157,6 @@ $( ".blog-ul2 a" ).hover(
 $(".snake").snakeify({
   speed: 200
 });
+
+
+

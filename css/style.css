@@ -1172,7 +1172,8 @@ p {
     opacity: 1; }
 
 .our-portfoio {
-  margin-top: 5%; }
+  margin-top: 5%;
+  margin-bottom: 250px; }
   .our-portfoio .title {
     margin-left: 5%; }
   .our-portfoio .ul-controls {
@@ -1336,8 +1337,16 @@ p {
   background-attachment: fixed;
   background-position: 50% 0;
   background-size: cover;
-  position: relative;
-  padding: 126px 0px 134px 0px; }
+  position: relative; }
+  .parallax-about-0 .tree {
+    margin-bottom: 123px; }
+  .parallax-about-0 .overlayheader1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); }
   .parallax-about-0 ul {
     padding-top: 4px; }
   .parallax-about-0 li {
@@ -1356,7 +1365,8 @@ p {
     top: 0;
     left: 115%; }
   .parallax-about-0 h1 {
-    color: black; }
+    color: black;
+    margin-top: 234px; }
 
 #our-team .title {
   margin: auto;
@@ -1396,24 +1406,23 @@ p {
   z-index: 999; }
   .menu-wrap.scrolled {
     z-index: 999;
-    transition: all 0.7s;
     top: 0; }
 
 .menu {
-  height: 95px; }
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
 
 .menu li {
   margin: 0px;
   list-style: none; }
 
 .menu a {
-  transition: all linear 0.15s;
   color: black; }
-  .menu a img {
-    margin-top: 23px;
-    margin-left: 207px; }
 
-.menu li:hover > a, .menu .current-item > a {
+.menu li:hover > a,
+.menu .current-item > a {
   text-decoration: none; }
 
 .menu .arrow {
@@ -1421,10 +1430,7 @@ p {
   line-height: 0%; }
 
 .menu > ul {
-  display: inline;
-  float: right;
-  margin-top: 35px;
-  margin-right: 205px; }
+  display: inline; }
 
 .menu > ul > li {
   display: inline-block;
@@ -1441,12 +1447,13 @@ p {
     margin-left: 48px;
     color: #737373; }
 
-.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+.menu > ul > li:hover > a,
+.menu > ul > .current-item > a {
   color: #2bd383; }
 
 .menu li:hover .sub-menu {
   z-index: 1;
-  opacity: 1;
+  visibility: visible;
   width: 268px;
   margin-top: 36px; }
 
@@ -1457,8 +1464,7 @@ p {
   top: 100%;
   left: 0px;
   z-index: -1;
-  opacity: 0;
-  transition: opacity linear 0.15s;
+  visibility: hidden;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
   background: #fff; }
 
@@ -1472,7 +1478,8 @@ p {
   color: #737373;
   font-size: 14px; }
 
-.sub-menu li a:hover, .sub-menu .current-item a {
+.sub-menu li a:hover,
+.sub-menu .current-item a {
   background: transparent;
   color: #2bd383; }
 
@@ -1480,17 +1487,20 @@ p {
   margin: 95px auto; }
 
 .services2 {
-  transition: all 2s; }
+  margin-top: 150px;
+  margin-bottom: 36px; }
   .services2 .service-input {
     display: flex;
     padding: 0px;
     text-align: left;
-    transition: all 1s; }
+    transition: all 1s;
+    border: none; }
     .services2 .service-input:hover i {
       transform: rotateY(180deg); }
     .services2 .service-input i {
       transition: all 1s;
-      margin: 0px; }
+      margin: 0px;
+      margin-right: 40px; }
 
 .prices {
   text-align: center;
@@ -1551,9 +1561,20 @@ p {
     border: 1px solid #2bd383;
     border-radius: 5px; }
 
-#pricing {
-  padding: 124px 0px 130px 0px;
-  background: #f5f5f5; }
+.margbottom103 {
+  margin-bottom: 103px; }
+
+.padding4stuk {
+  padding: 44px 0px 72px 0px; }
+
+.team-member2:hover .price-number {
+  color: #2bd383;
+  transform: scale(1.1);
+  z-index: 99999999999999999999999999999999999999999999999; }
+
+.active444 {
+  background-color: #2bd383 !important;
+  color: #fff !important; }
 
 #portfolio-single1 .h6ap h6 {
   display: inline; }
